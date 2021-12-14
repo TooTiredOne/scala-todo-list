@@ -14,7 +14,7 @@ in description.
 ## How to start project
 
 There are 2 options:
-- start by running `docker-compose up`
+- start by running `docker-compose up` (notice that the postgres container will try to create a volume in path `${HOME}/postgres-data/postgres/`, you may want to change the path in `docker-compose.yml` or just remove the volume)
 - start locally (in this case, don't forget to change the database address in `src/main/resources/application.conf`)
 
 ## How to use project
